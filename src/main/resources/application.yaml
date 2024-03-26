@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: employee
+
+  datasource:
+    url: jdbc:h2:mem:test_db
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  h2:
+    console:
+      enabled: true
+      path: /console
+
+springdoc:
+  swagger-ui:
+    path: /docs
